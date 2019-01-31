@@ -1,0 +1,68 @@
+body {
+background-color:$gray-lightest;
+}
+
+.entry-footer, .entry-meta {
+	font-size:.875em;
+}
+
+article {
+	padding-bottom: ($grid-gutter-width-base/2);
+	margin-bottom: ($grid-gutter-width-base/2);
+	border-bottom:1px solid $gray-lighter;
+}
+
+#content aside.widget, .sticky {
+	border:1px solid $gray-lighter;
+	padding: ($grid-gutter-width-base/2);
+	margin-bottom: ($grid-gutter-width-base/2);
+	background-color:$gray-lightest;
+}
+
+.wrapper {
+	background-color: $white;
+}
+
+#wrapper-footer.wrapper {
+	background-color:transparent;
+}
+
+.entry-title, .entry-title a {
+	color:$gray-dark;
+}
+
+p.intro-content {
+	font-size: 1.33em;
+	color:$black;
+}
+
+img.wp-post-image {
+	padding: ($grid-gutter-width-base/3) 0;
+	margin: ($grid-gutter-width-base/3) 0;
+	border-bottom:1px solid $gray-lighter;
+	border-top:1px solid $gray-lighter;
+}
+
+.navbar-brand {
+	a {
+		color:inherit;
+	}
+	a:hover {
+		text-decoration:none;
+	}
+}
+
+#wrapper-static-hero {
+	border-top:1px solid rgba(255,255,255,.2);
+}
+
+.wrapper.bg-primary.text-white .btn-primary, .navbar-inverse.bg-primary .btn-primary{
+	background-color:#fff;
+	color:$brand-primary;
+}
+
+.wrapper.bg-primary.text-white a{
+	color:#fff;
+	border-bottom:1px dotted #fff;
+}
+
