@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<products>
+	<product 
+		id="20140410" 
+		name="Business Card TwoSides" 
+		price="28.00" 
+		category="BusinessCard"
+		productFormat="H"
+		thumbImage = "images/products/cards/H_Card_twoside_thumb.png" 
+		frontImage = "images/products/cards/H_Card.png" 
+		backImage = "images/products/cards/H_Card.png"/>
+	<product 
+		id="20140411" 
+		name="Business Card OneSides" 
+		price="19.50" 
+		category="BusinessCard"
+		productFormat="H"
+		thumbImage = "images/products/cards/H_Card_oneside_thumb.png" 
+		frontImage = "images/products/cards/H_Card.png"/>
+	<product 
+		id="20140412" 
+		name="Business Card TwoSides" 
+		price="28.00" 
+		category="BusinessCard"
+		productFormat="V"
+		thumbImage = "images/products/cards/V_Card_twoside_thumb.png" 
+		frontImage = "images/products/cards/V_Card.png" 
+		backImage = "images/products/cards/V_Card.png"/>
+	<product 
+		id="20140413" 
+		name="Business Card OneSides" 
+		price="19.50" 
+		category="BusinessCard"
+		productFormat="V"
+		thumbImage = "images/products/cards/V_Card_oneside_thumb.png" 
+		frontImage = "images/products/cards/V_Card.png"/>
+	<product 
+		id="20140414" 
+		name="Stamp Square" 
+		price="30.00" 
+		category="Stamp"
+		productFormat="square"
+		thumbImage = "images/products/stamps/stampSquare_thumb.png" 
+		frontImage = "images/products/stamps/stampSquare.png"/>	
+	<product 
+		id="20140415" 
+		name="Stamp Circle" 
+		price="40.00" 
+		category="Stamp"
+		productFormat="circle"
+		thumbImage = "images/products/stamps/stampCircle_thumb.png" 
+		frontImage = "images/products/stamps/stampCircle.png"/>	
+	<product 
+		id="20140416" 
+		name="Flyer 1748x2480" 
+		price="80.00" 
+		category="Flyer"
+		productFormat="none"
+		thumbImage = "images/products/flyers/flyer_thumb.png" 
+		frontImage = "images/products/flyers/A5_Flyer.png"/>
+	<product 
+		id="20140410" 
+		name="Business Card TwoSides" 
+		price="28.00" 
+		category="BusinessCard"
+		productFormat="H"
+		thumbImage = "images/products/cards/H_Card_twoside_thumb.png" 
+		frontImage = "images/products/cards/H_Card.png" 
+		backImage = "images/products/cards/H_Card.png"/>
+	<product 
+		id="20140411" 
+		name="Business Card OneSides" 
+		price="19.50" 
+		category="BusinessCard"
+		productFormat="H"
+		thumbImage = "images/products/cards/H_Card_oneside_thumb.png" 
+		frontImage = "images/products/cards/H_Card.png"/>
+	<product 
+		id="20140412" 
+		name="Business Card TwoSides" 
+		price="28.00" 
+		category="BusinessCard"
+		productFormat="V"
+		thumbImage = "images/products/cards/V_Card_twoside_thumb.png" 
+		frontImage = "images/products/cards/V_Card.png" 
+		backImage = "images/products/cards/V_Card.png"/>
+	<product 
+		id="20140413" 
+		name="Business Card OneSides" 
+		price="19.50" 
+		category="BusinessCard"
+		productFormat="V"
+		thumbImage = "images/products/cards/V_Card_oneside_thumb.png" 
+		frontImage = "images/products/cards/V_Card.png"/>
+	<product 
+		id="20140414" 
+		name="Stamp Square" 
+		price="30.00" 
+		category="Stamp"
+		productFormat="square"
+		thumbImage = "images/products/stamps/stampSquare_thumb.png" 
+		frontImage = "images/products/stamps/stampSquare.png"/>	
+	<product 
+		id="20140415" 
+		name="Stamp Circle" 
+		price="40.00" 
+		category="Stamp"
+		productFormat="circle"
+		thumbImage = "images/products/stamps/stampCircle_thumb.png" 
+		frontImage = "images/products/stamps/stampCircle.png"/>	
+	<product 
+		id="20140416" 
+		name="Flyer 1748x2480" 
+		price="80.00" 
+		category="Flyer"
+		productFormat="none"
+		thumbImage = "images/products/flyers/flyer_thumb.png" 
+		frontImage = "images/products/flyers/A5_Flyer.png"/>																							
+</products>

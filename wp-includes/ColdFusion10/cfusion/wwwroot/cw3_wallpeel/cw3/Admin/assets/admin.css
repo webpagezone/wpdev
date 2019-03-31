@@ -1,0 +1,180 @@
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-size: 80%;
+}
+td, th, caption {
+	font-size: 100%;
+}
+a{
+	color: #345F81;
+}
+a img{
+	border: none;
+}
+#leftNav{
+	position: absolute;
+	left: 0px; 
+	top: 0px; 
+	width: 168px; 
+	z-index: 1;
+}
+#leftNav a.leftNav, #leftNav a.leftNavOpen{
+	background-color: #979797;
+	display: block;
+	border-bottom: 1px solid #696969;
+	border-right: 1px solid #696969;
+	padding: 2px 0px 2px 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: 4px 50%;
+}
+
+/*Navigation- Main Button Styles */
+/*Add a border to our first menu button, in this case lnProducts */
+#leftNav #lnProducts{
+	border-top: 1px solid #696969;
+}
+#leftNav a.leftNav{
+	background-image: url(images/inactive.gif);
+}
+#leftNav a.leftNav:hover, #leftNav a.leftNavOpen, #leftNav a.leftNavOpen:hover{
+	background-image: url(images/expand.gif);
+}
+
+div.lnSubMenu{
+	text-indent: 0px;
+	padding-left: 5px;
+	display: none;
+}
+div.lnSubMenu a{
+	color: #345F81;
+	text-decoration: none;
+	display: block;
+}
+div.lnSubMenu a:hover{
+	color: #868686;
+	text-decoration: underline;
+}
+
+#logOut{
+	text-align: center;
+	padding: 20px;
+}
+
+#divMainContent{
+	margin: 10px 10px 10px 180px;
+	padding: 10px;
+}
+#divMainContent h1{
+	font-size: 105%;
+	color: #002252;
+	background: transparent;
+	border-bottom: 3px double #002252;
+	margin: 0px;
+}
+#divMainContent h2{
+	font-size: 100%;
+	color: #000000;
+	padding: 2px 0px 3px 5px;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+#divMainContent h3{
+	font-size: 95%;
+	color: #5B5B5B;
+	border-bottom: 1px solid #5B5B5B;
+}
+
+/*Generic Table Styles */
+table{
+	border-collapse: collapse;
+	border: 1px solid #696969;
+	margin: 5px;
+}
+td, th{
+	border: 1px solid #696969;
+	padding: 3px;
+	vertical-align: top;
+}
+th{
+	background: #979797;
+	color: #FFFFFF;
+	font-weight: bold;
+	white-space: nowrap;
+}
+caption{
+	color: #5B5B5B;
+	font-weight: bold;
+	text-align: left;
+}
+
+/*Form Elements*/
+form{
+	margin: 0px;
+}
+fieldset, fieldset a{
+	color: #002252;
+	padding: 4px;
+}
+legend{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #696969;
+}
+input, select, textarea{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: #002252;
+	background: #FFFFFF;
+}
+input.formCheckbox, input.formRadio{
+	border: none;
+	background: transparent;
+}
+input.formButton{
+	background: #002252;
+	border-bottom: 1px solid #00357D;
+	border-left: 1px solid #00357D;
+	border-right: 1px solid #001128;
+	border-top: 1px solid #001128;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 3px 3px 0px 3px;
+}
+td input.formButton{
+	margin: 0px 3px 0px 3px;
+}
+
+/* Cartweaver Admin Classes */
+
+/* Table Styles */
+table.noBorders, table.noBorders td{
+	border: none;
+}
+/* Tables used to display tabular Data. 
+In the Admin, it is only necessary to apply within a nested table that has the noBorders class applied. */
+table.tabularData, table.tabularData td, table.tabularData th{
+	border: 1px solid #696969;
+	border-collapse: collapse;
+}
+
+/* altRowEven & altRowOdd are used to style alternating table rows. */
+.altRowEven{
+	background-color: #E6E6E6;
+}
+.altRowOdd{
+	background-color: #D6D6D6;
+}
+
+.smallprint{
+	font-size: 80%;
+	color: #993300;
+}

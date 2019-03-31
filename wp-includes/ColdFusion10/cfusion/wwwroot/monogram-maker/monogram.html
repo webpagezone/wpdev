@@ -1,0 +1,189 @@
+<!--action="action.cfm"-->
+<div id="fontRender"></div>
+<form class="form" style="background:#fff" name="lettering_form" id="lettering_form" method="post">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 ">                  
+                <div class="heading-bg">
+                    <span class="steps">Step 1.</span>&nbsp;&nbsp;Select Monogram Font
+
+                    <div style="display:none;">
+                        <span class="frame1" style='width: 100px; height: 100px'>Ab0</span>
+                        <span class="frame2" style='width: 100px; height: 100px'>Ab0</span>
+                        <span class="frame3" style='width: 100px; height: 100px'>Ab</span>
+                    </div>
+                </div> 
+
+                <div class="leftColumnContentRow clearfix" id="RowFontStyle">
+
+                    <div id="bgFontStyleDiv" style="display: block">
+                        <input id="CircleSimple" type="radio" class="hide-radio" name ="bgFontStyle"
+                               value="CircleSimple" >
+                        <label for ="CircleSimple" class="hide-radio-label"
+                               style="background: url('images/monograms/ThreeLetterCircle.png');background-size:contain;background-repeat:no-repeat;" ></label>
+
+                        <input id="CircleScalloped" type="radio" class="hide-radio" name ="bgFontStyle"
+                               value="CircleScalloped" >
+                        <label for ="CircleScalloped" class="hide-radio-label"
+                               style="background: url('images/monograms/ScallopedCircleMonogram.png');background-size:contain;background-repeat:no-repeat;" ></label>
+
+                        <input id="CircleTwoLetter" type="radio" class="hide-radio" name ="bgFontStyle"
+                               value="CircleTwoLetter" >
+                        <label for ="CircleTwoLetter" class="hide-radio-label"
+                               style="background: url('images/monograms/TwoLetterCircle.png');background-size:contain;background-repeat:no-repeat;" ></label>
+
+                        <input id="Vine" type="radio" class="hide-radio" name ="bgFontStyle"
+                               value="Vine" >
+                        <label for ="Vine" class="hide-radio-label"
+                               style="background: url('images/monograms/Vine.png');background-size:contain;background-repeat:no-repeat;" >   
+                               </label>
+
+
+                    </div>
+                </div>
+
+                <div class="heading-bg">
+                    <span class="steps">Step 2.</span>&nbsp;&nbsp; Edit Monogram Initials
+                </div>
+
+                <div class="leftColumnContentRow clearfix" id="RowEditInitials">
+                    <div id="EditInitials_3" class="row">
+                        <div class="col-xs-12">
+                            <input type="text"  id="textBox_3" size="2" style="width: 40px; " value="Mg#"  maxlength="3" >
+                        </div>
+                    </div>
+                    <div id="EditInitials_2" class="row">
+                        <div class="col-xs-12">
+                            <input type="text"  id="textBox_2" size="2" style="width: 30px;" value="MG"  maxlength="2" >
+                        </div>
+                    </div>         
+                    <div id="EditInitials_1" class="row">
+                        <div class="col-xs-12">
+                            <input type="text"  id="textBox_1" size="2" style="width: 20px;" value="M"  maxlength="1" >
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="heading-bg">
+                    <span class="steps">Step 3.</span>&nbsp;&nbsp;Select Color/Pattern
+                </div>
+
+
+
+                <div  class="leftColumnContentRow clearfix" id="RowGbPatterns">
+                    <div class="row">
+                        <div class="col-xs-12" >
+
+                            <div id="bgColorDiv" style="display: block">
+                                
+                                <cfoutput query="bgPatterns">
+
+                                    <cfset bgPatternName = #listfirst(name,".")# >
+                                        <cfset bgUrl = "url(images/bgPatterns/"&name&")">
+
+                                            <input id="#bgPatternName#" type="radio" class="hide-radio" name ="bgPattern"
+                                                   value="#bgPatternName#" >
+                                            <label for ="#bgPatternName#" class="hide-radio-label"
+                                                   style="background:url(images/bgPatterns/#name#);
+                                                   background-size:contain;background-repeat:no-repeat;" >     
+                                            </label>
+
+                                </cfoutput>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heading-bg">
+                    <span class="steps">Step 4.</span>&nbsp;&nbsp; Add Frame Design
+                </div>
+                
+                <div class="leftColumnContentRow clearfix" id="RowFrames">
+                    <div class="row">
+                        <div id="bgFrameDiv" class="col-xs-12" style="display: block">
+                            <cfoutput query="frames">
+
+                                <cfset frameName = #listfirst(name,".")# >
+                                    <cfset bgUrl = "url(images/framess/'&name&')">
+
+                                        <input id="#frameName#" type="radio" class="hide-radio" name ="bgFrame"
+                                               value="#frameName#" >
+                                        <label for ="#frameName#" title="#name#" class="hide-radio-label"
+                                               style="background:url(images/frames/#name#);
+                                               background-size:contain;background-repeat:no-repeat;" ></label>
+
+                            </cfoutput>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-7">
+                 
+                    <canvas id="canvasFront" width="650" height="700"></canvas>
+                
+            </div>
+            <div class="col-xs-2">
+                 <div class="heading-bg">
+                      Click to Select Object
+               
+                </div>
+                <div class="leftColumnContentRow clearfix">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="layers isLink" id="fontLayer">
+                                Initials <span class="frame1" style='width: 100px; height: 100px'>Ab0</span>
+                                
+                                
+                            </div>
+
+                            <div class="layers isLink" id="frameLayer">
+                                Frame <span id="download" class="isLink"><i class="fa fa-circle" aria-hidden="true"></i> </span>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="heading-bg">
+                      Move Back / Delete Selected Object
+                </div>
+
+                <div class="leftColumnContentRow clearfix">
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <span id ="deleteElement" class="isLink"  title="Delete"><i class="fa fa-trash" aria-hidden="true" ></i></span>
+                                &nbsp;&nbsp;
+                                <span id ="moveBack" class="isLink" title="Move Behind"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> </span>
+
+                    </div></div>
+                </div>
+                
+                <div class="heading-bg">
+                      Download
+                </div>
+
+                <div class="leftColumnContentRow clearfix">
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <span id ="downloadPng" class="isLink"><i class="fa fa-download" aria-hidden="true"></i> Download Image</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+</form>

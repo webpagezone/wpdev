@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+
+        <title> </title>
+
+        <script src="js/jquery-2.1.0.js"></script>
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!--additionalcss files -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/font_awesome/css/font-awesome.min.css">
+
+        <!-- additional additional JS files for this page -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/Monograms.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        
+        <script src="js/jquery-2.1.0.js" type="text/javascript"></script>
+        <script src="js/jquery.fontselect.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.2.1/fabric.min.js" type="text/javascript"></script>
+        
+   
+
+    </head>
+ 
+    <body>
+
+       <canvas id="canvasFront"  width="720" height="400" style="border:3px solid grey;"></canvas>
+       <textarea id="svgTextarea" name="svgTextarea" style="border:1px solid black; width: 400px; height:400px; "></textarea>
+
+       <script  language="javascript">
+            
+        var canvas = new fabric.Canvas('canvasFront');
+            
+         var obj;   
+       // var svgUrl = "../Monogram/images/frames/simpleRound.svg";
+       //var svgUrl = "../Monogram/images/frames/FrameCircleDouble.svg";
+       //var svgUrl = "../Monogram/images/frames/C1.svg";
+       //var svgUrl = "../Monogram/images/frames/Frame_crab_circle.svg";
+	   var svgUrl = "../Monogram/images/frames/aa.svg";
+       //var colorSet = '#00FFFF';
+         
+          // fabric.loadSVGFromURL('../Monogram/simpleRound.svg', function(objects, options) {
+        var pattern = new fabric.Pattern({
+            source: '/Monogram/images/bgPatterns/Aloha-Cream.jpg',
+            repeat: 'repeat'
+        });
+        
+        fabric.loadSVGFromURL(svgUrl, function (objects, options) { 
+            
+           obj = fabric.util.groupSVGElements(objects, options);
+                
+           if (obj.type === 'group') {
+           // console.log('obj.type ' + obj.type);
+           //console.log('pattern ' + pattern);
+                obj.getObjects().forEach(function(o) { o.fill = pattern; });
+                 canvas.add(obj).renderAll();
+            }
+            else {
+                
+              obj.fill = pattern;
+              canvas.add(obj).renderAll();
+            }    
+
+            //console.log(obj.type);
+            
+            canvas.add(obj).renderAll();
+        });
+	
+       
+		var img = canvas.toDataURL("image/png");
+		//create image
+		//$("#i").html('<img src="'+img+'"/>');
+        var mydesign = canvas.toSVG();
+    	//console.log(mydesign);
+		
+    	//$("#svgTextarea").html('<img src="'+img+'"/>');
+        
+//console.log('canvas.toSVG ' + canvas.toSVG());
+$("#svgTextarea").html(mydesign);
+
+
+fabric.log('Normal SVG output: ', canvas.toSVG());
+        </script>
+        
+         
+    </body>
+</html>
+

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fonts>
+	<font 
+		family="'Jolly Lodger', cursive" 
+		name="Jolly+Lodger"
+		label="Jolly Lodger"/>
+	<font 
+		family="'Bilbo Swash Caps', cursive" 
+		name="Bilbo+Swash+Caps"
+		label="Bilbo"/>
+	<font 
+		family="'Nosifer', cursive" 
+		name="Nosifer"
+		label="Nosifer"/>
+	<font 
+		family="'Aldrich', cursive" 
+		name="Aldrich"
+		label="Aldrich"/>	
+	<font 
+		family="'Frijole', cursive" 
+		name="Frijole"
+		label="Frijole"/>	
+	<font 
+		family="'Rock Salt', cursive" 
+		name="Rock+Salt"
+		label="Rock"/>	
+	<font 
+		family="'Eater', cursive" 
+		name="Eater"
+		label="Eater"/>	
+	<font 
+		family="'Pinyon Script', cursive" 
+		name="Pinyon+Script"
+		label="Pinyon"/>
+	<font 
+		family="'Kranky', cursive" 
+		name="Kranky"
+		label="Kranky"/>
+	<font 
+		family="'Cabin Sketch', cursive" 
+		name="Cabin+Sketch"
+		label="Cabin"/>									
+	<font 
+		family="'Fredericka the Great', cursive" 
+		name="Fredericka+the+Great"
+		label="Fredericka"/>			
+	<font 
+		family="'Codystar', cursive" 
+		name="Codystar"
+		label="Codystar"/>
+	<font 
+		family="'Monoton', cursive" 
+		name="Monoton"
+		label="Monoton"/>
+	<font 
+		family="'Vast Shadow', cursive" 
+		name="Vast+Shadow"
+		label="Vast"/>
+	<font 
+		family="'Monofett', cursive" 
+		name="Monofett"
+		label="Monofett"/>
+	<font 
+		family="'Shojumaru', cursive" 
+		name="Shojumaru"
+		label="Shojumaru"/>												
+	<font 
+		family="'Kenia', cursive" 
+		name="Kenia"
+		label="Kenia"/>
+	<font 
+		family="'Trade Winds', cursive" 
+		name="Trade+Winds"
+		label="TradeWinds"/>			
+	<font 
+		family="'Rye', cursive" 
+		name="Rye"
+		label="Rye"/>	
+	<font 
+		family="'Londrina Shadow', cursive" 
+		name="Londrina+Shadow"
+		label="Londrina"/>	
+	<font 
+		family="'Caesar Dressing', cursive" 
+		name="Caesar+Dressing"
+		label="Caesar"/>	
+	<font 
+		family="'Ewert', cursive" 
+		name="Ewert"
+		label="Ewert"/>	
+	<font 
+		family="'Faster One', cursive" 
+		name="Faster+One"
+		label="FasterOne"/>	
+	<font 
+		family="'Butcherman', cursive" 
+		name="Butcherman"
+		label="Butcherman"/>	
+	<font 
+		family="'Plaster', cursive" 
+		name="Plaster"
+		label="Plaster"/>	
+	<font 
+		family="'Hanalei', cursive" 
+		name="Hanalei"
+		label="Hanalei"/>									
+</fonts>

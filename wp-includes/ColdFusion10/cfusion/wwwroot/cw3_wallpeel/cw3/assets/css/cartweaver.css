@@ -1,0 +1,122 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Cartweaver 3 CSS HTML Styles */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body, td, th, p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+a:link {
+	color: #345F81;
+}
+a:visited {
+	color: #002252;
+}
+a:hover {
+	color: #868686;
+	text-decoration:none;
+}
+a:active {
+	color: #696969;
+	text-decoration:none;
+}
+
+hr{
+	color: #696969;
+	height: 1px;
+	width: 90%;
+}
+
+h1 {
+	color: #002252;
+	font-size: 14px;
+	margin: 0px;
+	border-bottom:3px double #868686;
+}
+
+h2 {
+	color: #696969;
+	font-size: 18px;
+}
+
+/*Form Elements*/
+form {
+	margin: 0px;
+}
+
+input, select, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	font-size: 11px;
+	color: #002252;
+	border: 1px inset #979797;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Cartweaver 3 CSS Classes */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*
+NOTE: All styles below are specific to Cartweaver 3.
+You may use the CSS above, or remove it and attach
+your own CSS file in addition to cartweaver.css
+*/
+
+/*Form Styles*/
+input.formCheckbox {
+	border: none;
+	background: transparent;
+}
+
+input.formButton {
+	background: #002252;
+	border-bottom: 1px solid #00357D;
+	border-left: 1px solid #00357D;
+	border-right: 1px solid #001128;
+	border-top: 1px solid #001128;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 3px 3px 0px 3px;
+}
+
+/* Tables used to display tabular Data. */
+/* Apply to <table> tags only. 
+Example: <table class="tabulardata">*/
+table.tabularData, table.tabularData td, table.tabularData th {
+	border: 1px solid #696969;
+	border-collapse: collapse;
+}
+table.tabularData td, table.tabularData th{
+	padding: 3px;
+}
+table.tabularData th, table.tabularData th a:link, table.tabularData th a:visited, table.tabularData th a:hover, table.tabularData th a:active  {
+	background: #979797;
+	color: #FFFFFF;
+}
+
+/* altRowEven & altRowOdd are used to style alternating table rows. */
+.altRowEven {
+	background-color: #E6E6E6;
+}
+.altRowOdd{
+	background-color: #D6D6D6;
+}
+
+/* oldprice is displayed when there is a discount */
+.oldprice {
+	text-decoration: line-through;
+}
+.smallprint {
+	font-size: 10px;
+}
+
+.pagingLinks {
+	text-align: center;
+}
+
+.errorMessage {
+	color: #993333;
+	font-weight: bold;
+}
+/* This aligns products to the top of the table cell with horizontal display of results */
+table#tableSearchResults td {
+	vertical-align:top;
+}
