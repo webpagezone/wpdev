@@ -1,0 +1,410 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Product Designer\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: N-Media\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_\n"
+"X-Poedit-Basepath: ..\\\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:99
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:216
+msgid "Select files"
+msgstr "Sélectionner fichiers"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:100
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:217
+msgid "Add files to the upload queue and click the start button."
+msgstr "Ajouter des fichiers à la file d'attente de téléchargement et cliquez sur le bouton de démarrage."
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:106
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:227
+msgid "Filename"
+msgstr "Nom de Fichier"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:108
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:228
+msgid "Status"
+msgstr "Statut"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:109
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:229
+msgid "Size"
+msgstr "Taille"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:118
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:248
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:244
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:886
+msgid "Add Files"
+msgstr "Ajouter des fichiers"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:119
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:245
+msgid "Start Upload"
+msgstr "Démarrer le depôt"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:201
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:857
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:971
+#, javascript-format
+msgid "Uploaded %d/%d files"
+msgstr "%d / %d fichiers téléchargés"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:250
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:888
+#, javascript-format
+msgid "%d files queued"
+msgstr "%d fichiers en file d'attente"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:262
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:361
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:235
+msgid "Drag files here."
+msgstr "Glissez les fichiers ici"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:340
+msgid "Error: File too large:"
+msgstr "Erreur: fichier trop grand:"
+
+#: js/plupload-2.1.2/js/jquery.plupload.queue/jquery.plupload.queue.js:344
+msgid "Error: Invalid file extension:"
+msgstr "Erreur : extension de fichier invalide :"
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:219
+msgid "List"
+msgstr "Liste"
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:220
+msgid "Thumbnails"
+msgstr "Miniatures"
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:246
+msgid "Stop Upload"
+msgstr "Arrêter le dépôt"
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:437
+msgid "File count error."
+msgstr "Erreur lors du comptage de fichiers."
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:454
+#, javascript-format
+msgid "File: %s"
+msgstr "Fichier %s"
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:458
+#, javascript-format
+msgid "File: %s, size: %d, max file size: %d"
+msgstr "Fichier : %s, taille : %d, taille de fichier maxi : %d"
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:462
+#, javascript-format
+msgid "%s already present in the queue."
+msgstr "%s déjà présents dans la file d'attente."
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:466
+#, javascript-format
+msgid "Upload element accepts only %d file(s) at a time. Extra files were stripped."
+msgstr "Le dépôt d'éléments n’accepte que %d fichier(s) à la fois. Les fichiers en trop ont été enlevés."
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:470
+msgid "Image format either wrong or not supported."
+msgstr "Format d'image soit mal ou pas pris en charge."
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:474
+msgid "Runtime ran out of available memory."
+msgstr "Runtime a manqué de mémoire disponible."
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:483
+msgid "Upload URL might be wrong or doesn't exist."
+msgstr "URL de téléchargement peut-être tort ou ne existe pas."
+
+#: js/plupload-2.1.2/js/jquery.ui.plupload/jquery.ui.plupload.js:780
+msgid "Close"
+msgstr "Fermer"
+
+#: classes/admin.class.php:237 classes/admin.class.php:238
+#: classes/admin.class.php:246 classes/admin.class.php:247
+msgid " Settings"
+msgstr "Paramètres"
+
+#: classes/admin.class.php:269
+msgid "All options are updated"
+msgstr "Toutes les options sont mises à jour"
+
+#: classes/admin.class.php:309 classes/admin.class.php:321
+#: templates/admin/settings.php:32 templates/admin/settings.php:69
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: classes/admin.class.php:459 classes/plugin.class.php:676
+msgid "Remove"
+msgstr "Supprimer"
+
+#: classes/admin.class.php:481
+msgid "Product Design"
+msgstr "conception du produit"
+
+#: classes/plugin.class.php:91
+msgid "No more files allowed"
+msgstr "Pas plus de fichiers autorisés"
+
+#: classes/plugin.class.php:92
+msgid "Are you sure? You cannot make changes in this design but re-design."
+msgstr "Es-tu sûr? Vous ne pouvez pas apporter des modifications dans cette conception, mais re-conception."
+
+#: classes/plugin.class.php:229
+msgid "Product Designs"
+msgstr "Conception des produits"
+
+#: classes/plugin.class.php:230 templates/_product-designer.php:30
+msgid "Design"
+msgstr "Design entièrement sensible"
+
+#: classes/plugin.class.php:316
+msgid "Error while creating directory"
+msgstr "Erreur durant la création du dossier."
+
+#: classes/plugin.class.php:472
+msgid "File removed"
+msgstr "Fichier supprimé"
+
+#: classes/plugin.class.php:476
+#, php-format
+msgid "Error while deleting file %s"
+msgstr "Erreur lors de la suppression du fichier %s"
+
+#: classes/plugin.class.php:554
+msgid "Design Attached"
+msgstr "Conception attachée"
+
+#: classes/plugin.class.php:555
+#, php-format
+msgid "<a href=\"%1$s\">%2$s</a>"
+msgstr "<a href=\"%1$s\">%2$s</a>"
+
+#: classes/plugin.class.php:569
+#, php-format
+msgid "<button class=\"button\" href=\"javascript:;\">%s</button>"
+msgstr "<button class=\"button\" href=\"javascript:;\">%s</button>"
+
+#: classes/plugin.class.php:667
+msgid "Size: "
+msgstr "Taille:"
+
+#: templates/_product-designer.php:45
+msgid "Delete"
+msgstr "Supprimer"
+
+#: templates/_product-designer.php:46
+msgid "Zoom in"
+msgstr "Agrandir"
+
+#: templates/_product-designer.php:47
+msgid "Reset zoom"
+msgstr "Réinitialiser le zoom"
+
+#: templates/_product-designer.php:48
+msgid "Zoom out"
+msgstr "Zoom"
+
+#: templates/_product-designer.php:49
+msgid "Clear all"
+msgstr "Effacer tout"
+
+#: templates/_product-designer.php:50
+msgid "Clone"
+msgstr "Cloner"
+
+#: templates/_product-designer.php:51
+msgid "Save"
+msgstr "Enregistrer"
+
+#: templates/_product-designer.php:52
+msgid "Proceed"
+msgstr "Poursuivre"
+
+#: templates/_product-designer.php:62
+msgid "Proceeding..."
+msgstr "instance de justice"
+
+#: templates/_product-designer.php:76
+msgid "Templates"
+msgstr "Templates"
+
+#: templates/_product-designer.php:102
+msgid "Edit Text"
+msgstr "Modifier le texte."
+
+#: templates/_product-designer.php:111
+msgid "Bold"
+msgstr "Gras"
+
+#: templates/_product-designer.php:114
+msgid "Italic"
+msgstr "Italique"
+
+#: templates/_product-designer.php:118 templates/_product-designer.php:185
+msgid "Color"
+msgstr "Couleur"
+
+#: templates/_product-designer.php:123
+msgid "Font Family"
+msgstr "Famille de police"
+
+#: templates/_product-designer.php:146
+msgid "Text Decoration"
+msgstr "Texte"
+
+#: templates/_product-designer.php:148
+msgid "Underline"
+msgstr "Souligner"
+
+#: templates/_product-designer.php:149
+msgid "Line Through"
+msgstr "Ligne à travers"
+
+#: templates/_product-designer.php:150
+msgid "Overline"
+msgstr "Ligne au-dessus"
+
+#: templates/_product-designer.php:151
+msgid "None"
+msgstr "Ne pas réserver ce livre."
+
+#: templates/_product-designer.php:156
+msgid "Font Size"
+msgstr "Taille de police"
+
+#: templates/_product-designer.php:168
+msgid "Edit Image"
+msgstr "Modifier l’image"
+
+#: templates/_product-designer.php:173
+msgid "Grayscale"
+msgstr "Niveau de gris"
+
+#: templates/_product-designer.php:176
+msgid "Sepia"
+msgstr "Sepia"
+
+#: templates/_product-designer.php:179
+msgid "Sepia 2"
+msgstr "Sépia 2"
+
+#: templates/_product-designer.php:182
+msgid "Invert"
+msgstr "Invertir"
+
+#: templates/_product-designer.php:196
+msgid "Add Shapes"
+msgstr "Ajouter des formes"
+
+#: templates/_product-designer.php:215
+msgid "Add Text"
+msgstr "Ajouter un texte"
+
+#: templates/_product-designer.php:229
+msgid "Custom Upload"
+msgstr "Upload personnalisé"
+
+#: templates/_product-designer.php:245
+#, php-format
+msgid "File max size: %s"
+msgstr "Taille maximale du fichier : %s"
+
+#: templates/_product-designer.php:246
+#, php-format
+msgid "File types: %s"
+msgstr "Type de fichiers autorisés : %s"
+
+#: templates/_product-designer.php:247
+#, php-format
+msgid "Files allowed: %s"
+msgstr "Nombre de fichiers autorisés : %s"
+
+#: templates/_product-designer.php:276
+msgid "are you sure to delete this file?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce fichiers ?"
+
+#: templates/admin/admin-canvas.php:35
+msgid "Object Info"
+msgstr "Infos d'objets"
+
+#: templates/admin/admin-canvas.php:38
+msgid "Type"
+msgstr "Type d'avion"
+
+#: templates/admin/admin-canvas.php:42
+msgid "Top"
+msgstr "Haut"
+
+#: templates/admin/admin-canvas.php:46
+msgid "Left"
+msgstr "Gauche"
+
+#: templates/admin/admin-canvas.php:51
+msgid "Height"
+msgstr "Hauteur"
+
+#: templates/admin/admin-canvas.php:56
+msgid "Width"
+msgstr "Largeur"
+
+#: templates/admin/admin-canvas.php:60
+msgid "Angle"
+msgstr "Angle"
+
+#: templates/admin/admin-canvas.php:64
+msgid "Download Selected Object"
+msgstr "Télécharger l'objet sélectionné"
+
+#: templates/admin/admin-canvas.php:65
+msgid "Download Selected Canvas"
+msgstr "Télécharger Canvas sélectionnés"
+
+#: templates/admin/options.php:4
+msgid "Design button title"
+msgstr "Titre du bouton Design"
+
+#: templates/admin/options.php:9
+msgid "Enter text for product design button(default: Design Product)"
+msgstr "Entrez le texte pour le bouton de conception de produit (par défaut : la conception des produits)"
+
+#: templates/admin/options.php:12
+msgid "Button font color"
+msgstr "Couleur de la police du bouton"
+
+#: templates/admin/options.php:17
+msgid "Select font color"
+msgstr "Sélectionner la couleur de police"
+
+#: templates/admin/options.php:20
+msgid "Button background color"
+msgstr "Couleur de fond des boutons"
+
+#: templates/admin/options.php:25
+msgid "Select background color"
+msgstr "Sélectionnez la couleur d'arrière-plan"
+
+#: templates/admin/options.php:32
+msgid "Front end"
+msgstr "Tête du train"
+
+#: templates/admin/options.php:34
+msgid "Set options as per your need"
+msgstr "Définissez les options selon votre besoin"
+
+#: templates/admin/settings.php:92
+msgid "Save settings"
+msgstr "Sauver Paramètres"

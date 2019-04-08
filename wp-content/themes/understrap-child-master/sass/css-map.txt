@@ -1,0 +1,103 @@
+1. theme.min.css - main file /css/theme.min.css` file(s) provides all styles.
+
+/sass/
+	
+	theme.scss  - @import
+
+		/theme/
+		 			theme_variables.scss	// overwrite Bootstrap variables and add your own variables
+
+		/assets/
+		 			bootstrap4.scss		 
+
+		/understrap/
+		 			understrap.scss			// add some css for wordpress
+		 			woocommerce.scss
+
+		/assets/
+					font-awesome.scss
+					underscores.scss - @import
+							/src/sass/underscores/galleries.scss
+
+		/theme/
+
+					theme.scss 				// your custom styles
+					contact-form7.scss      
+
+// to add the the bootswatch style open the 
+
+
+@import "theme/child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+
+// bootsatch
+@import "../src/sass/bootswatch/cerulian/variables";
+// bootsatch
+
+@import "assets/bootstrap4";// <--------- Loads Bootstrap3 or Bootstrap4. Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
+
+// bootsatch
+@import "../src/sass/bootswatch/cerulian/bootswatch";
+// bootsatch
+
+@import "../src/sass/understrap/understrap/understrap";  // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "understrap/woocommerce";  // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+//Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome"; // <------- Font Awesome Icon font
+@import "assets/underscores"; // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";  // <--------- Add your styles into this file
+@import "../src/sass/understrap/theme/contact-form7"; // <-------- Loads some basic styling for contact form 7 plugin
+
+
+
+//add
+
+//	  @import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables";
+//    @import "bower_components/bootswatch-sass/paper/variables";
+//    @import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/bootstrap";
+//    @import "bower_components/bootswatch-sass/paper/bootswatch-scss/readable/bootswatch";
+
+
+
+Installing dependencies in child theme folder
+
+Run: $ npm install
+
+$ gulp watch
+Or, to run with Browser-Sync:
+
+First change the browser-sync options to reflect your environment in the file /gulpfile.js in the beginning of the file:
+var browserSyncOptions = {
+                    proxy: "localhost/theme_test/", // <----- CHANGE HERE
+                    notify: false
+                };
+
+
+-------------------------
+to fix sass error file not found 
+add 
+ .pipe(wait(500)) to gulp file:
+
+// Compiles SCSS files in CSS
+gulp.task( 'sass', function() {
+    var stream = gulp.src( paths.sass + '/*.scss' )
+    //add this
+    .pipe(wait(500))
+
+        .pipe( sourcemaps.init( { loadMaps: true } ) )
+        .pipe( plumber( {
+            errorHandler: function( err ) {
+                console.log( err );
+                this.emit( 'end' );
+            }
+        } ) )
+        .pipe( sass( { errLogToConsole: true } ) )
+        .pipe( autoprefixer( 'last 2 versions' ) )
+        .pipe( sourcemaps.write( './' ) )
+        .pipe( gulp.dest( paths.css ) )
+        .pipe( rename( 'custom-editor-style.css' ) );
+    return stream;
+});
+					

@@ -1,0 +1,13 @@
+.progress_bar {
+  background: #ffc;
+  margin: 5px auto;
+  display: inline-block;
+  width: 95%;
+  border: 1px solid;
+  background-color: #E0DFDF;
+}
+.progress_bar_runner {
+  background-color: #1B4EEE;
+  height: 25px;
+  display: none;
+}

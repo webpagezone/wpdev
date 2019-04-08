@@ -30,6 +30,8 @@ var paths = cfg.paths;
 // Compiles SCSS files in CSS
 gulp.task( 'sass', function() {
     var stream = gulp.src( paths.sass + '/*.scss' )
+    
+    .pipe(wait(500))
         .pipe( sourcemaps.init( { loadMaps: true } ) )
         .pipe( plumber( {
             errorHandler: function( err ) {

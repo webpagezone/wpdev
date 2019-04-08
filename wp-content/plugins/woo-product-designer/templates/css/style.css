@@ -1,0 +1,66 @@
+.panel-heading a:hover {
+	text-decoration: none;
+}
+
+.panel-heading a:focus {
+	text-decoration: none;
+}
+
+.panel-body img {
+	/*max-width: 100px; */
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+label {
+	font-weight: normal;
+}
+.site {
+	/*max-width: 100%;*/
+}
+.canvas-container {
+	margin: 0 auto;
+}
+.progress-bar {
+	-webkit-transition: width 3s !important;
+	transition: width 3s !important;
+	-moz-transition: width 3s !important;
+}
+.design-boxes {
+	height: 100px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	text-align: center;
+}
+.design-boxes img {
+	max-height: 100% !important;
+}
+@media only screen and (max-width: 768px){
+	.design-boxes {
+		height: auto !important;
+	}
+	#nm-toolbar {
+		width: 100% !important;
+	}
+}
+.row .design-boxes:last-child {
+	border-bottom: 0;
+}
+.nm-wpd-delete-img {
+	position: absolute;
+    top: -4px;
+    right: -8px;
+    background-color: red !important;
+    color: white !important;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: block;
+    text-align: center;	
+}
+.uploaded-files-box {
+	margin-top: 10px;
+}
+.screen-reader-text {
+	display: none;
+}
