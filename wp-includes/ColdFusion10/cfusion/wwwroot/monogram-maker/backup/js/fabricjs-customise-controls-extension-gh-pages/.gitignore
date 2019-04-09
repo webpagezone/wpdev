@@ -1,9 +1,0 @@
-### PhpStorm
-.idea/
-
-### Vagrant ###
-.vagrant/
-_logs/
-
-### Node.js modules ###
-node_modules/

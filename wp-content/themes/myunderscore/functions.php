@@ -47,6 +47,8 @@ if ( ! function_exists( 'myunderscore_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'myunderscore' ),
 		) );
 
+		//add_editor_syle( 'css/editor-style.css');
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -120,7 +122,17 @@ add_action( 'widgets_init', 'myunderscore_widgets_init' );
  * Enqueue scripts and styles.
  */
 function myunderscore_scripts() {
+
+	//add bootstrap css
+	wp_enqueue_style('myunderscore_bootstrap_css', get_template_directory_uri() .'/css/bootstrap.min.css' );
+
 	wp_enqueue_style( 'myunderscore-style', get_stylesheet_uri() );
+
+	// add jquery
+	wp_enqueue_script('jquery');
+
+	//add bootstrap css
+	wp_enqueue_script( 'myunderscore_bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151210', true );
 
 	wp_enqueue_script( 'myunderscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

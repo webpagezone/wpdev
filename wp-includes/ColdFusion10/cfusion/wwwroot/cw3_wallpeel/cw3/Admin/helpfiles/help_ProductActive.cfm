@@ -1,3 +1,0 @@
-<h2>Active Products </h2>
-<p> When you first link to the Active Products List from the admin menu all active products will be retrieved. You can then browse through the products to find the one you are looking for, or you can refine your product list by searching by Product ID or Name. You can set the search to be a &quot;fuzzy&quot; search, that is bring back items that are similar to the search criteria you entered, or you may choose to find records that match the criteria exactly. </p>
-<p>Click either the Product Name or the Edit (pencil) icon to edit the product. The thumbnail image (if available) is displayed, along with a checkbox indicating whether the product is displayed in the store or not. </p>

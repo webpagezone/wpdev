@@ -1,7 +1,0 @@
-<h2>Options</h2>
-<p> The Option architecture is one of the more powerful features of Cartweaver. There can be an unlimited number of options and option groups. The options are used to define the SKUs for each product. </p>
-<h3>Adding Option Groups </h3>
-<p>To add an Option Group click the Add New link under the Option tab in the Admin menu. This will take you to a simple form that will allow you to add the new option group. Once a new option group has been added, it will be displayed under the Options tab in the Admin menu. Click the option group name to add new options. </p>
-<h3>Administering Options</h3>
-<p>Once you add an option group, click on the group name in the Options tab of the Admin menu to open the Option Group page. Here you can add and administer options to be listed under this particular option group.</p>
-This screen also allows you to edit, delete or archive Option records. You can also set the order in which you want them to be displayed on the web. If there are products associated with a given option you will not be able to delete the option. You can however Archive the option so it will no longer appear on the web or in the selection fields on the Product Admin page. 
