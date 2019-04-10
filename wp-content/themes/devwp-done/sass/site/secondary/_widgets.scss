@@ -1,0 +1,187 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+#secondary .widget,
+#tertiary .widget {
+	padding-bottom: 1.25em;
+}
+
+.widget select {
+	width: 100%;
+}
+
+#secondary .widget,
+#tertiary .widget,
+#colophon .widget {
+	font-size: .9rem;
+}
+
+#secondary .widget-title,
+#tertiary .widget-title {
+	color: $color__near_black;
+	border-width: 0 0 0 3px;
+	border-style: solid;
+	border-color: $color__red;
+	letter-spacing: 1px;
+	padding-left: 0.8rem;
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+	font-size: 1.125rem;
+}
+
+.widget-title a {
+	color: inherit;
+}
+
+/* widget lists */
+.widget ul {
+	list-style: none;
+	margin: 0;
+}
+
+.widget ul li {
+	border-bottom: 1px solid $color__very_light_gray;
+	padding: 0.5em 0;
+}
+
+.widget ul li ul {
+	padding: 0;
+	position: relative;
+}
+
+.widget ul li li {
+	border: 0;
+	padding: 0.375rem 0 0.375rem 1.5rem;
+}
+
+/* Widget lists of links */
+
+.widget_top-posts ul li ul,
+.widget_rss_links ul li ul,
+.widget-grofile ul.grofile-links li ul,
+.widget_pages ul li ul,
+.widget_meta ul li ul {
+	bottom: 0;
+}
+
+.widget_nav_menu ul li li,
+.widget_top-posts ul li,
+.widget_top-posts ul li li,
+.widget_rss_links ul li,
+.widget_rss_links ul li li,
+.widget-grofile ul.grofile-links li,
+.widget-grofile ul.grofile-links li li {
+	padding-bottom: 0;
+}
+
+/* Widget markup */
+
+.widget .post-date,
+.widget .rss-date {
+	font-size: .81em;
+}
+
+/* Text Widget */
+
+.widget_text {
+	word-wrap: break-word;
+}
+
+/* Archives, Categories, Menu, Pages, Recent Comments, Recent Posts */
+
+.widget .rss-date {
+	display: block;
+}
+
+/* Contact Info Widget */
+
+.widget_contact_info .contact-map {
+	margin-bottom: 0.5em;
+}
+
+/* Gravatar */
+
+.widget-grofile h4 {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+/* Recent Comments */
+
+.widget_recent_comments table,
+.widget_recent_comments th,
+.widget_recent_comments td {
+	border: 0;
+}
+
+/* Recent Posts widget */
+
+.widget_recent_entries .post-date {
+	display: block;
+}
+
+/* RSS Widget */
+
+.widget_rss ul li {
+	padding: 1em 0;
+}
+
+/* Tag and Category Cloud widgets */
+
+.tagcloud,
+.widget_tag_cloud,
+.wp_widget_tag_cloud {
+	line-height: 1.5;
+}
+
+.widget .tagcloud a,
+.widget .tagcloud a:visited,
+.widget.widget_tag_cloud a,
+.widget.widget_tag_cloud a:visited,
+.wp_widget_tag_cloud a,
+.wp_widget_tag_cloud a:visited {
+	border: 1px solid $color__light_blue;
+	color: $color__light_blue;
+	display: inline-block;
+	font-size: 1rem !important; /* !important to overwrite inline styles */
+	margin: 0.25rem 0.25rem 0 0 !important;
+	padding: 0.25rem 0.625rem 0.3125rem !important;
+	position: relative;
+	transition: border-color 0.2s;
+	width: auto;
+	word-wrap: break-word;
+	z-index: 0;
+}
+
+.widget .tagcloud a:hover,
+.widget .tagcloud a:focus,
+.widget.widget_tag_cloud a:hover,
+.widget.widget_tag_cloud a:focus,
+.wp_widget_tag_cloud a:hover,
+.wp_widget_tag_cloud a:focus {
+	border-color: $color__strong_blue;
+	color: $color__strong_blue;
+	text-decoration: none;
+}
+
+/* Calendar widget */
+
+.widget_calendar th,
+.widget_calendar td {
+	text-align: center;
+}
+
+.widget_calendar tfoot td {
+	border: 0;
+}
+
+footer .widget .tagcloud a {
+	color: $color__white;
+	border-color: $color__very_light_gray;
+
+}
+footer .widget .tagcloud a:hover {
+	color: $color__medium_gray;
+	border-color: $color__medium_gray;
+}

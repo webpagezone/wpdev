@@ -1,0 +1,177 @@
+.menu-social ul {
+	list-style: none;
+	margin: 0.625rem 0;
+	padding: 0;
+}
+
+.menu-social ul li, .menu-social-regular ul li {
+	display: inline-block;
+	padding-bottom: 0.3125rem;
+}
+
+.menu-social li a::before {
+	display: inline-block;
+	border-radius: 50px;
+	padding: 0.625rem;
+	font-family: 'Font Awesome 5 Brands';
+	font-weight: 400;
+	color: $color__white;
+	-webkit-font-smoothing: antialiased;
+	transition: .3s;
+	width: 44px;
+	height: 44px
+}
+
+.menu-social li a:hover, .menu-social-regular li a:hover {
+	color: $color__white;
+	opacity: .9;
+	transition: .3s;
+	transition-property: initial;
+	transition-duration: .3s;
+	transition-timing-function: initial;
+	transition-delay: initial
+}
+
+.menu-social li a[href*="del.icio.us"]::before {
+	content: '\f1a5';
+	background: #39f;
+}
+
+.menu-social li a[href*="digg.com"]::before {
+	content: '\f1a6';
+	background: #005be2;
+}
+
+.menu-social li a[href*="dribbble.com"]::before {
+	content: '\f17d';
+	background: #ea4c89;
+}
+
+.menu-social li a[href*="etsy.com"]::before {
+	content: '\f2d7';
+	background: #d5641c;
+}
+
+.menu-social li a[href*="flipboard.com"]::before {
+	content: '\f44d';
+	background: #e12828;
+}
+
+.menu-social li a[href*="meetup.com"]::before {
+	content: '\f2e0';
+	background: #e0393e;
+}
+
+.menu-social li a[href*="quora.com"]::before {
+	content: '\f2c4';
+	background: #a82400;
+}
+
+.menu-social li a[href*="snapchat.com"]::before {
+	content: '\f2ac';
+	background: #fffc00;
+}
+
+.menu-social li a[href*="skype.com"]::before {
+	content: '\f17e';
+	background: #00aff0;
+}
+
+.menu-social li a[href*="stumbleupon.com"]::before {
+	content: '\f1a4';
+	background: #eb4924;
+}
+
+.menu-social li a[href*="facebook.com"]::before {
+	content: '\f39e';
+	background: #3b5998;
+}
+
+.menu-social li a[href*="flickr.com"]::before {
+	content: '\f16e';
+	background: #0063dc;
+}
+
+.menu-social li a[href*="foursquare.com"]::before {
+	content: '\f180';
+	background: #0732a2;
+}
+
+.menu-social li a[href*="github.com"]::before {
+	content: '\f09b';
+	background: #6cc644;
+}
+
+.menu-social li a[href*="plus.google.com"]::before {
+	content: '\f0d5';
+	background: #db4437;
+}
+
+.menu-social li a[href*="instagram.com"]::before {
+	content: '\f16d';
+	background: #517fa4;
+}
+
+.menu-social li a[href*="linkedin.com"]::before {
+	content: '\f0e1';
+	background: #0077b5;
+}
+
+.menu-social li a[href*="pinterest.com"]::before {
+	content: '\f0d2';
+	background: #cb2027;
+}
+
+.menu-social li a[href*="reddit.com"]::before {
+	content: '\f1a1';
+	background: #ff4500;
+}
+
+.menu-social li a[href*="soundcloud.com"]::before {
+	content: '\f1be';
+	background: #f80;
+}
+
+.menu-social li a[href*="stackoverflow.com"]::before {
+	content: '\f16c';
+	background: #fe7a15;
+}
+
+.menu-social li a[href*="tumblr.com"]::before {
+	content: '\f173';
+	background: #35465c;
+}
+
+.menu-social li a[href*="twitter.com"]::before {
+	content: '\f099';
+	background: #55acee;
+}
+
+.menu-social li a[href*="vimeo.com"]::before {
+	content: '\f194';
+	background: #1ab7ea;
+}
+
+.menu-social li a[href*="yelp.com"]::before {
+	content: '\f1e9';
+	background: #af0606;
+}
+
+.menu-social li a[href*="youtube.com"]::before {
+	content: '\f167';
+	background: #cd201f;
+}
+
+.menu-social li a[href*="wordpress.com"]::before {
+	content: '\f19a';
+	background: #21759b;
+}
+
+.social-share-wrapper div {
+	display: inline-block;
+	margin-right: .3125rem;
+}
+
+.share-on {
+	text-align: center;
+}

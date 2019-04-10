@@ -1,0 +1,88 @@
+	/////// These are code snippets you could use to add additional functionality or enhancements as needed.
+    // The Code below is for using a more recent version of jQuery with your WordPress Install.
+    if ( ! is_admin() ) {
+		// $url = 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js';
+		// https://developers.google.com/speed/libraries/#jquery
+
+		// https://code.jquery.com/jquery/
+		// https://cdnjs.com/libraries/jquery/
+		$url = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js';
+
+		// https://codex.wordpress.org/Function_Reference/wp_remote_fopen
+		$test_url = wp_remote_fopen( $url, 'r' );
+		if ( $test_url !== false ) {
+			function devwp_external_jquery() {
+				wp_deregister_script( 'jquery' );
+				wp_register_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' );
+
+				// https://api.jquery.com/jquery.noconflict/
+				// http://learn.jquery.com/using-jquery-core/avoid-conflicts-other-libraries/
+				// https://developer.wordpress.org/reference/functions/wp_add_inline_script/
+				// https://wpengine.com/support/including-a-different-jquery-version-in-wordpress/
+				// https://wordpress.org/plugins/jquery-updater/
+				wp_add_inline_script( 'jquery3.2.1', 'var jQuery3_2_1 = $.noConflict(true);' );
+				wp_enqueue_script( 'jquery' );
+			}
+
+			add_action( 'wp_enqueue_scripts', 'devwp_external_jquery' );
+		} else {
+			function devwp_local_jquery() {
+				// If you want to Download jquery and use that, un-comment the code below and place jquery in the proper folder.
+				// Or just load the default jquery from WordPress.
+				// wp_deregister_script( 'jquery' );
+				// wp_register_script( 'jquery', get_template_directory_uri() . '/dist/js/jquery-1.12.4.min.js', __FILE__, false, '1.12.4', true );
+				wp_enqueue_script( 'jquery' );
+			}
+
+			add_action( 'wp_enqueue_scripts', 'devwp_local_jquery' );
+		}
+	}
+
+/////////////////////////////////////////////
+// The Code Snippet below is to customize the functionality of YouTube Videos in the Header Section.
+    	if ( ! is_admin() ) {
+		function devwp_header_video_dequeue_script() {
+			wp_dequeue_script( 'wp-custom-header' );
+			wp_deregister_script( 'wp-custom-header' );
+			// wp_enqueue_script( 'wp-custom-header', get_template_directory_uri() . '/dist/js/wp-custom-header.js', array(), '', true );
+			wp_enqueue_script( 'wp-custom-header', get_theme_file_uri( '/dist/js/wp-custom-header.js' ), array(), '', true );
+		}
+
+		add_action( 'wp_print_scripts', 'devwp_header_video_dequeue_script', 100 );
+	}
+
+
+// The snippets below are examples of how to update the thumbnail sizes in the settings -> media section.
+update_option( 'thumbnail_size_w', 200 );
+update_option( 'thumbnail_size_h', 200 );
+update_option( 'thumbnail_crop', 1 );
+
+update_option( 'medium_size_w', 555 );
+update_option( 'medium_size_h', 312 );
+update_option( 'medium_crop', 0 );
+
+update_option( 'large_size_w', 1140 );
+update_option( 'large_size_h', 641 );
+update_option( 'large_crop', 0 );
+
+
+ //View all scripts used by your website. Place in your single.php file
+ global $wp_scripts;
+ echo '<pre>';
+ var_dump( $wp_scripts );
+ echo '</pre>';
+
+
+//  https://codex.wordpress.org/Editing_wp-config.php
+//  These Next 5 lines are in the wp-config.php file
+//	define( 'WP_DEBUG', true );
+//	define( 'SCRIPT_DEBUG', true );
+//	define( 'WP_DEBUG_LOG', true );
+//	define( 'WP_DEBUG_DISPLAY', false );
+//	define( 'SAVEQUERIES', true );
+//	if ( current_user_can( 'administrator' ) ) {
+//		global $wpdb;
+//		echo "<pre>";
+//		print_r( $wpdb->queries );
+//		echo "</pre>";
+//	}

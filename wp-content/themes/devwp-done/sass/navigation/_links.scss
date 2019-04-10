@@ -1,0 +1,32 @@
+a,
+a:visited {
+	transition: all 0.3s ease;
+}
+
+a:focus {
+	outline: 1px solid $color__dark_gray;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+a img:hover {
+	opacity: 0.8;
+	transition: all 0.3s ease;
+	// transition: 1s;
+}
+
+.gallery-item a {
+	border: 0;
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-links .nav-next {
+	float: right;
+	text-align: right;
+}

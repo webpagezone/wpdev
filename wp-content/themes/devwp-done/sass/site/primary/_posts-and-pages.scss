@@ -1,0 +1,41 @@
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.cat-links, .tags-links, .edit-link, .comments-link {
+	margin-right: .5rem;
+}
+
+// Read More Styling
+
+.moretag {
+	color: $color__dark_gray;
+	margin-top: 0.625rem;
+	padding: .3125rem 0;
+	text-decoration: none;
+	display: block;
+	border: solid 1px $color__dark_gray;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.moretag:hover {
+	text-decoration: none;
+	color: $color__light_blue;
+	border-color: $color__light_blue;
+	transition: all 0.3s ease;
+}
+
+.moretag:visited {
+	color: $color__strong_blue;
+	border-color: $color__strong_blue;
+}

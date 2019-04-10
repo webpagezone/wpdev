@@ -1,0 +1,37 @@
+p {
+	margin: 0 0 1.5em;
+	// @include font-size(1.125);
+	font-size: 1.125rem;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	border-left: 2px solid $color__red;
+	margin: 0 1.5em;
+	padding: 0 0 0 1em;
+	quotes: "" "";
+}
+
+// blockquote::before,
+// blockquote::after {
+// 	content: "";
+// }
+
+address {
+	font-style: italic;
+}
+
+pre {
+	padding: .625rem 0 .625rem 1rem;
+	overflow: auto;
+	overflow-y: hidden;
+	background: $color__very_light_gray;
+}
+
+mark, ins {
+	background: $color__highlight;
+	text-decoration: none;
+}

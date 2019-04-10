@@ -1,0 +1,53 @@
+/**
+ * Checkout
+ */
+@media screen and (min-width: 768px) {
+	.col2-set {
+		.form-row-first {
+			float: left;
+			margin-right: $columns__margin;
+		}
+
+		.form-row-last {
+			float: right;
+			margin-right: 0;
+		}
+
+		.form-row-first,
+		.form-row-last {
+			@include column-width(2);
+		}
+	}
+}
+.wc-proceed-to-checkout {
+	display: table;
+	margin: 45px auto 20px;
+	cursor: pointer;
+	position: relative;
+	left: auto;
+}
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+p.no-comments {
+	background-color: $color__red !important;
+	border: none;
+	color: $color__white;
+	padding: 1em 1.618em;
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.woocommerce-info a,
+.woocommerce-info a:visited {
+	color: $color__white !important;
+}
+#coupon_code {
+	margin-bottom: 10px;
+}
+.woocommerce {
+	.col-1, .col-2 {
+		max-width: none;
+	}
+}

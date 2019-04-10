@@ -1,0 +1,117 @@
+/*!
+Theme Name: DevWP
+Theme URI: https://www.pixemweb.com/devwp/
+Author: Joel Rivera - PixemWeb
+Author URI: https://www.pixemweb.com/
+Description: WordPress Developer Training Theme created to help you code your very own custom WordPress Theme using some of the best resources from Underscores, Bootstrap 4, Fontawesome, Prism and Custom Code.
+Requires at least: WordPress 4.9.6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: devwp
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, custom-colors, editor-style, footer-widgets, sticky-post
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+DevWP is based on Underscores http://underscores.me/, (C) 2012-2018 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Mixins
+# Bootstrap
+# Font Awesome
+
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Blocks
+# Woocommerce
+# Prism
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import "bootstrap/bootstrap";
+/*--------------------------------------------------------------
+# Fontawesome
+--------------------------------------------------------------*/
+@import "fonts/fontawesome";
+@import "fonts/solid";
+@import "fonts/brands";
+@import "fonts/regular";
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import "blocks/blocks";
+/*--------------------------------------------------------------
+# Woocommerce
+--------------------------------------------------------------*/
+@import "scss/woocommerce";
+/*--------------------------------------------------------------
+# Prism
+--------------------------------------------------------------*/
+@import "prism/prism";

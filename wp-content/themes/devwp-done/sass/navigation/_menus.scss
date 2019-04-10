@@ -1,0 +1,115 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-left: 0;
+	}
+}
+
+.navbar {
+	background: $color__dark_gray;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: $color__white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+	color: $color__light_gray;
+}
+
+.navbar-dark .navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler {
+	margin-bottom: 0;
+}
+
+.navbar-dark .navbar-toggler:hover,
+.navbar-dark .navbar-toggler:focus {
+	background: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+	outline: 1px solid $color__medium_gray;
+}
+.open > .dropdown-menu {
+	transform: scale(1, 1);
+	opacity: 1;
+	background: $color__dark_gray;
+}
+
+.dropdown-menu {
+	background: $color__dark_gray;
+	margin-top: 0;
+	opacity: .8;
+	transform-origin: top;
+	animation-fill-mode: both;
+}
+
+.dropdown-item {
+	color: $color__white;
+}
+
+.dropdown-item:visited {
+	color: $color__medium_gray;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	background-color: #333;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	background: transparent;
+	color: #ccc;
+}
+
+.dropdown-toggle::after {
+	vertical-align: .150em;
+}
+
+// This is to handle any navigation in the sidebar
+#secondary .nav, #tertiary .nav {
+	flex-direction: column !important;
+}
+
+// Scroll To Top
+.top, .top:link {
+	color: $color__white;
+	background: $color__dark_gray;
+	opacity: .7;
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	// @include font-size(1.125);
+	font-size: 1.125rem;
+	line-height: 2.667rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.top:hover {
+	text-decoration: none;
+	transition: all 0.3s ease;
+	opacity: 1;
+}
+
+.pagination {
+	margin-bottom: 10px;
+}

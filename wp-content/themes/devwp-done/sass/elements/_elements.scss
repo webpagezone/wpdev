@@ -1,0 +1,139 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+@import "header";
+@import "tables";
+
+.entry-footer {
+	clear: both;
+}
+.site-footer {
+	background: $color__dark_gray;
+	// background: $color__red;
+}
+
+.site-info {
+	color: #fff;
+	text-align: center;
+}
+
+.site-info a {
+	color: #fff;
+}
+
+.site-info a:visited,
+.site-info a:hover {
+	color: #ccc;
+}
+
+// Bootstrap Helpers
+.mt-6 {
+	margin-top: 6rem !important;
+}
+
+.mt-7 {
+	margin-top: 7rem !important;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+  .marketing h2 {
+	font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+  }
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+	margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+  
+	.featurette-heading {
+	  font-size: 50px;
+	}
+  }
+  
+  @media (min-width: 62em) {
+	.featurette-heading {
+	  margin-top: 7rem;
+	}
+  }
+
+  .bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	user-select: none;
+  }
+
+  @media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+	  font-size: 3.5rem;
+	}
+  }
+
+//   offcanvas navbar
+@media (max-width: 991.98px) {
+	.offcanvas-collapse {
+	  position: fixed;
+	  top: 90px; /* Height of navbar */
+	  bottom: 0;
+	  left: 100%;
+	  width: 100%;
+	  padding-right: 1rem;
+	  padding-left: 1rem;
+	  overflow-y: auto;
+	  visibility: hidden;
+	  background-color: #343a40;
+	  transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	  transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+	  transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	}
+	.offcanvas-collapse.open {
+	  visibility: visible;
+	  transform: translateX(-100%);
+	}
+	}
+	
+	.pricing-header {
+		max-width: 700px;
+	}
+	
+	.card-deck .card {
+		min-width: 220px;
+	}
