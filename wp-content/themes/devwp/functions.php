@@ -120,7 +120,17 @@ add_action( 'widgets_init', 'devwp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function devwp_scripts() {
+	//add bootstrap css
+	wp_enqueue_style('devwp_bootstrap_css', get_template_directory_uri() .'/css/bootstrap.min.css' );
+
 	wp_enqueue_style( 'devwp-style', get_stylesheet_uri() );
+
+	// add jquery
+	wp_enqueue_script('jquery');
+
+	//add bootstrap css
+	wp_enqueue_script( 'devwp_bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151210', true );
+
 
 	wp_enqueue_script( 'devwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
